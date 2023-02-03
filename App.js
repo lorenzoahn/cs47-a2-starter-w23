@@ -4,9 +4,10 @@ import { useFonts } from "expo-font";
 import { Themes } from "./assets/Themes";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Footer } from "./app/components";
+import { Header, Body, Footer } from "./app/components";
 import * as SplashScreen from "expo-splash-screen";
 import { useCallback } from "react";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 /* Keep the splash screen visible while we fetch resources */
 SplashScreen.preventAutoHideAsync();
@@ -18,22 +19,10 @@ function HomeScreen() {
   /* TODO: insert your code here */
 
   return (
-    <View style={styles.container}>
-      <Text
-        style={{
-          fontFamily: "Sydney", // test to see if the font is loaded, feel free to remove this
-        }}
-      >
-        Open up App.js to start working on your app!
-      </Text>
-      <Text
-        style={{
-          fontFamily: "Sydney-Bold", // test to see if the font is loaded, feel free to remove this
-        }}
-      >
-        ~Good luck~
-      </Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Header />
+      <Body />
+    </SafeAreaView>
   );
 }
 
@@ -75,8 +64,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: Themes.light.backgroundColor,
   },
 });
