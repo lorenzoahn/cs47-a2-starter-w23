@@ -19,16 +19,16 @@ const style = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: windowWidth * 0.05,
+    padding: 20,
     // flex: 1,
   },
   headerIcons: {
-    height: windowWidth * 0.12,
-    width: windowWidth * 0.12,
+    height: windowHeight * 0.05,
+    width: windowHeight * 0.05,
   },
   title: {
     fontFamily: "Sydney-Bold",
-    fontSize: windowWidth * 0.09,
+    fontSize: windowHeight * 0.05,
   },
 });
 export default Header;

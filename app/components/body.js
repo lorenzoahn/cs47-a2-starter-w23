@@ -48,7 +48,7 @@ const style = StyleSheet.create({
   },
   audio: {
     backgroundColor: Themes.light.bgSecondary,
-    width: windowWidth * 0.8,
+    width: windowHeight * 0.4,
     height: undefined,
     borderRadius: 30,
     padding: 20,
@@ -83,7 +83,7 @@ const style = StyleSheet.create({
     borderRadius: 8,
   },
   profileImage: {
-    width: windowWidth * 0.8,
+    width: windowHeight * 0.4,
     height: undefined,
     aspectRatio: 1 / 1.1,
     position: "relative",
